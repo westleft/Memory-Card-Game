@@ -1,6 +1,6 @@
 const section = document.querySelector('section');
 const playerLivesCount = document.querySelector('span');
-let playerLives = 6;
+let playerLives = 7;
 
 // playerLivesCount.textContent = playerLives;
 
@@ -40,7 +40,7 @@ const randomize = () => {
 
 const cardGenerator = () => {
     const cardData = randomize();
-
+    renderLives();
     cardData.forEach(() => {
         section.innerHTML += `<div class="card"></div>`;
     })
@@ -110,9 +110,8 @@ const restart = () => {
             section.style.pointerEvents = 'All';
         }, 1000);
     });
-    playerLives = 6;
+    playerLives = 7;
     renderLives();
 };
 
-renderLives();
 cardGenerator();

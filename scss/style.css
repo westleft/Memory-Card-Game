@@ -21,21 +21,28 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#4b6cb7), to(#182848));
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+h1 {
+  color: white;
 }
 
 .live {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (8rem)[4];
-      grid-template-columns: repeat(4, 8rem);
-  -ms-grid-rows: (8rem)[4];
-      grid-template-rows: repeat(4, 8rem);
+  -ms-grid-columns: (5rem)[4];
+      grid-template-columns: repeat(4, 5rem);
+  -ms-grid-rows: (5rem)[4];
+      grid-template-rows: repeat(4, 5rem);
   grid-gap: 1rem;
   -webkit-perspective: 800px;
           perspective: 800px;
@@ -59,7 +66,8 @@ section {
 }
 
 .back {
-  background-color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
