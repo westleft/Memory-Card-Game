@@ -23,6 +23,12 @@ body {
           flex-direction: column;
 }
 
+.live {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 section {
   display: -ms-grid;
   display: grid;
@@ -66,5 +72,11 @@ section {
 .face {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  margin: 0 8px;
 }
 /*# sourceMappingURL=style.css.map */

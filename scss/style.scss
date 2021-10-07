@@ -11,7 +11,9 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-
+.live {
+    display: flex;
+}
 section {
     display: grid;
     grid-template-columns: repeat(4, 8rem);
@@ -24,9 +26,7 @@ section {
     position: relative;
     transform-style: preserve-3d;
     transition: all 2s cubic-bezier(0.075, 0.885, 0.32, 1.275);
-    // transform: rotateY(18deg);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2) ;
-    
 }
 
 .face, .back {
@@ -46,4 +46,10 @@ section {
 
 .face {
     transform: rotateY(-180deg);
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
 }
